@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RefreshMyPassword</string>
+    <string name="wifi_status">WiFi状态</string>
+</resources>
