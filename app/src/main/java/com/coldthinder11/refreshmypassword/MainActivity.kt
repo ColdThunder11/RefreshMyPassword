@@ -201,6 +201,8 @@ class MainActivity : AppCompatActivity() {
 
         ReadConfig();
 
+        readWifiStatus();
+
         ReadPasswordSMS();
 
         findViewById<Button>(R.id.saveDataButton).setOnClickListener {
@@ -308,6 +310,8 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener;
             }
         };
-        readWifiStatus();
+        findViewById<Button>(R.id.rereadButton).setOnClickListener{
+            readWifiStatus();
+        }
     }
 }
